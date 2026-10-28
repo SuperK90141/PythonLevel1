@@ -65,5 +65,19 @@ def move_7():
 ''')
 s.onkeypress(move_7, "7")
 
+def move_8():
+    t.goto(t.xcor() + 100, t.ycor())
+    t.goto(t.xcor(), t.ycor() + 100) 
+    t.goto(t.xcor() - 100, t.ycor())
+    t.goto(t.xcor(), t.ycor() - 100)
+    t.goto(t.xcor(), t.ycor() + 100)
+    t.right(-60)
+    t.forward(100)
+    t.right(120)
+    t.forward(100)
+    t.right(-60)
+s.onkeypress(move_8, "8")
+
+
 s.listen()
 s.mainloop()
