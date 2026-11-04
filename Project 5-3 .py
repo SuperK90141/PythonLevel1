@@ -19,3 +19,14 @@ if A == ("triangle"):
   t.forward(C)
   t.right(-60)
   t.end_fill()
+elif A == ("circle"):
+  t.begin_fill()
+  t.circle(C)
+  t.end_fill()
+elif A == ("square"):
+  t.begin_fill()
+  t.goto(t.xcor() + C, t.ycor())
+  t.goto(t.xcor(), t.ycor() + C) 
+  t.goto(t.xcor() - C, t.ycor())
+  t.goto(t.xcor(), t.ycor() - C)
+  t.end_fill()
